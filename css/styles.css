@@ -68,6 +68,13 @@ body {
 .header-tel .header-mailto:focus {
     color: var(--accent-color);
 }
+.header-link-style {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+}
 
 /*-------Герой-------*/
 
@@ -82,6 +89,7 @@ body {
 }
 
 .hero-btn {
+    font-weight: 700;
     font-family: inherit;
     font-size: 16px;
     line-height: 1.87;
@@ -188,4 +196,7 @@ color: var(--second-text-color);
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--links-color);
+}
+.footer-address-color {
+    color: var(--third-text-color);
 }
