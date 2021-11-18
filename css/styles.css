@@ -13,7 +13,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.02em;
 }
+
 
 .list {
     list-style: none;
@@ -57,15 +59,28 @@ body {
 .header-link:focus {
     color: var(--accent-color);
 }
-.header-tel .header-mailto {
+.header-tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--second-text-color);
 }
-.header-tel .header-mailto:hover,
-.header-tel .header-mailto:focus {
+.header-mailto {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+}
+.header-tel:active,
+.header-tel:hover,
+.header-tel:focus {
+    color: var(--accent-color);
+}
+.header-mailto:active,
+.header-mailto:hover,
+.header-mailto:focus {
     color: var(--accent-color);
 }
 .header-link-style {
@@ -79,6 +94,7 @@ body {
 /*-------Герой-------*/
 
 .hero-title {
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -86,6 +102,7 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-color);
+    background-color: var(--second-text-color);
 }
 
 .hero-btn {
@@ -94,14 +111,18 @@ body {
     font-size: 16px;
     line-height: 1.87;
     display: flex;
+    border: none;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     color: var(--third-text-color);
 }
 
 .hero-btn:active {
-    background-color: var(--accent-color);
+    color: var(--third-text-color);
 }
 
 /*-------СофтСкилс-------*/
@@ -168,17 +189,65 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-title-color);
-
 }
 .galery-eng-text {
-font-size: 16px;
-line-height: 1.18;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--second-text-color);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
+
+/*-------Портфолио-------*/
+
+.portfolio-cards {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.portfolio-btn {
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    align-items: center;
+    border: none;
+    display: flex;
+    border-radius: 4px;
+    letter-spacing: 0.03em;
+    background: #F5F4FA;
+    color: var(--first-text-color);
+    
+}
+.portfolio-btn:active,
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: var(--third-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-titles {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--first-text-color);   
+}
+.portfolio-after-titles {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
 
 }
 /*-------Футер-------*/
+.footer {
+    background-color: var(--second-title-color);
+}
 .footer-logo {
     font-family: Raleway;
     font-size: 26px;
